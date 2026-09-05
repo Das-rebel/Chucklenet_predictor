@@ -1,0 +1,23 @@
+# Kaggle raw downloads (re-downloadable via Kaggle API)
+kaggle_data/dataset.csv
+kaggle_data/shortjokes.csv
+kaggle_data/train_jokes.csv
+kaggle_data/test_jokes.csv
+kaggle_data/jester_ratings.csv
+kaggle_data/jester_items.csv
+kaggle_data/data_jokes.csv
+
+# Generated intermediate (not needed if train.jsonl/val.jsonl exist)
+kaggle_data/jester_training.jsonl
+kaggle_data/jester_final.jsonl
+kaggle_data/combined_training.jsonl
+
+# Outputs
+training_output/
+*.pt
+*.pth
+
+# Cache
+__pycache__/
+*.pyc
+.pytest_cache/

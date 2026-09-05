@@ -1,0 +1,127 @@
+{
+  "regression_metrics": {
+    "mae": 16.000407409667968,
+    "mse": 339.8106431160762,
+    "rmse": 18.433953540032487,
+    "r2": -1.3663693810311717
+  },
+  "classification_metrics": {
+    "accuracy": 0.4,
+    "f1_weighted": 0.22857142857142856,
+    "f1_macro": 0.19047619047619047,
+    "f1_micro": 0.4,
+    "precision_weighted": 0.16,
+    "precision_macro": 0.13333333333333333,
+    "recall_weighted": 0.4,
+    "recall_macro": 0.3333333333333333,
+    "kappa": 0.0
+  },
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "classification_report": {
+    "Moderate": {
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1-score": 0.5714285714285714,
+      "support": 2.0
+    },
+    "High": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "Very High": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "accuracy": 0.4,
+    "macro avg": {
+      "precision": 0.13333333333333333,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.19047619047619047,
+      "support": 5.0
+    },
+    "weighted avg": {
+      "precision": 0.16,
+      "recall": 0.4,
+      "f1-score": 0.22857142857142856,
+      "support": 5.0
+    }
+  },
+  "error_analysis": {
+    "error_statistics": {
+      "mean_error": -14.055052185058594,
+      "median_error": -15.050945281982422,
+      "std_error": 11.927537515822614,
+      "mean_absolute_error": 16.000407409667968,
+      "median_absolute_error": 15.050945281982422,
+      "max_absolute_error": 29.9632568359375,
+      "min_absolute_error": 4.8633880615234375,
+      "quartile_error": {
+        "q1": 8.086128234863281,
+        "q2": 15.050945281982422,
+        "q3": 22.038318634033203,
+        "q95": 28.37826919555664,
+        "q99": 29.646259307861328
+      }
+    },
+    "error_distribution": {
+      "negative_errors": 0.8,
+      "positive_errors": 0.2,
+      "zero_errors": 0.0,
+      "large_errors": 0.4
+    },
+    "error_by_range": {
+      "Moderate": {
+        "mean_absolute_error": 6.474758148193359,
+        "sample_count": "2",
+        "error_std": 6.474758148193359
+      },
+      "High": {
+        "mean_absolute_error": 18.544631958007812,
+        "sample_count": "2",
+        "error_std": 3.4936866760253906
+      },
+      "Very High": {
+        "mean_absolute_error": 29.9632568359375,
+        "sample_count": "1",
+        "error_std": 0.0
+      }
+    }
+  },
+  "correlation_metrics": {
+    "pearson": {
+      "correlation": 0.9759063992006782,
+      "p_value": 0.004473120704333106
+    },
+    "spearman": {
+      "correlation": 0.9999999999999999,
+      "p_value": 1.4042654220543672e-24
+    },
+    "kendall": {
+      "correlation": 0.9999999999999999,
+      "p_value": 0.016666666666666666
+    }
+  },
+  "probabilistic_metrics": {},
+  "num_samples": 5,
+  "evaluation_timestamp": "2026-09-05T13:01:08.499118"
+}

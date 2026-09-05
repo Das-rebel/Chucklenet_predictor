@@ -1,0 +1,10 @@
+[chucklenet.plugins]
+audio_analysis = chucklenet_predictor.plugins.audio_analyzer
+reverse_modeling = chucklenet_predictor.plugins.reverse_modeler
+text_analysis = chucklenet_predictor.plugins.text_analyzer
+
+[console_scripts]
+chucklenet-demo = chucklenet_predictor.demo:main
+chucklenet-eval = chucklenet_predictor.evaluation:main
+chucklenet-predictor = chucklenet_predictor.cli:main
+chucklenet-train = chucklenet_predictor.training:main

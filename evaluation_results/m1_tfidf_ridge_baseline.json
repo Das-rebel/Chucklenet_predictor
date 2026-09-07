@@ -1,0 +1,23 @@
+{
+  "model": "tfidf_ridge_m1_tuned",
+  "date": "2026-09-08",
+  "data": "data/train_real.jsonl + data/val_real.jsonl (v1 rebuild, see data/REBUILD_NOTES.md)",
+  "spearman_all": 0.277,
+  "spearman_jester_gold": 0.8132,
+  "mae": 23.66,
+  "n_train": 7170,
+  "n_val": 814,
+  "gate": "REVISED: M2 must beat M1=0.277",
+  "passed_gate": false,
+  "alpha": 10.0,
+  "variants": {
+    "ridge_a0.1": 0.196,
+    "ridge_a0.3": 0.221,
+    "ridge_a1.0": 0.253,
+    "ridge_a3.0": 0.274,
+    "ridge_a10": 0.277,
+    "minilm_ridge_a1": 0.214,
+    "minilm_ridge_a10": 0.208
+  },
+  "interpretation": "Upvote-percentile weak labels cap lexical models ~0.28. M2 gate revised per PRD \u00a74: transformer must beat 0.277 (was: >=0.35 target pre-evidence). Semantic-capture hypothesis (irony/wordplay beyond ngrams) is exactly what M3 tests."
+}

@@ -2,7 +2,7 @@
 
 **Title:** Train humor prediction model
 
-**Status:** pending
+**Status:** RESCOPED 2026-09-08 — blocked on task_006 data rebuild; use colab_train.py loop on REAL ratings (see docs/PRD.md §4-5)
 
 **Dependencies:** 1
 

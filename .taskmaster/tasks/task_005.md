@@ -2,7 +2,7 @@
 
 **Title:** Implement context-aware reverse humor generation
 
-**Status:** pending
+**Status:** DEFERRED 2026-09-08 to v3 (decision D-R3; gated on v1 M4 calibration)
 
 **Dependencies:** 2
 

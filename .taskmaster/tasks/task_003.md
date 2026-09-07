@@ -2,7 +2,7 @@
 
 **Title:** Fix audio pipeline (NumPy/Whisper conflict)
 
-**Status:** pending
+**Status:** DEFERRED 2026-09-08 to v2 (decision D-R3: audio out of v1 scope)
 
 **Dependencies:** None
 

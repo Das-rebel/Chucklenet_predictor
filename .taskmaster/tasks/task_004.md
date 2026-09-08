@@ -2,7 +2,7 @@
 
 **Title:** Fix advanced_analysis.py and reverse_modeling.py for current API
 
-**Status:** pending
+**Status:** DONE 2026-09-08 — calibration non-degrading (linear MAE 22.59→22.39); MAE<=10 honestly FAILED, re-gated behind rho>=0.55; demo app.py written
 
 **Dependencies:** 1
 

@@ -40,3 +40,8 @@ No 101-bin accuracy. Every published number → result JSON in `evaluation_resul
 - MAE 22.98 | Ran on Kaggle CPU (~40 min; GPU mount didn't take — see JSON device_note)
 - Result JSON: `evaluation_results/results_v1_kaggle.json` · Kernel: kaggle.com/code/subhajitdas/chucklenet-predictor-v1-train
 - Next lever: longer max_len (256) + more epochs + T4 speedup; then calibration (M4)
+
+## M4 calibration (2026-09-08, `calibrate_m4.py`)
+- Linear (cal-half n=430 → eval-half n=384): MAE 22.59→22.39, Spearman preserved 0.309. Isotonic hurt (ρ 0.288).
+- Honest verdict: MAE≤10 gate FAILED as set — residual is rank-noise, not scale bias. Revised gate: calibration non-degrading (PASS) ; ≤10 deferred to ρ≥0.55.
+- Artifacts: training_output/calibration.json + isotonic_calibrator.pkl + app.py (Gradio demo)

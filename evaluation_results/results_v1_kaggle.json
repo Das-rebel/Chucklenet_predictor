@@ -1,0 +1,20 @@
+{
+  "model": "roberta_regression_v1",
+  "date": "2026-09-08",
+  "device": "cpu",
+  "data": "kaggle:subhajitdas/chucklenet-predictor-v1-data (7,984 real-labeled, see REBUILD_NOTES.md)",
+  "epochs": 4,
+  "lr": 2e-05,
+  "batch": 32,
+  "max_len": 128,
+  "best": {
+    "rho": 0.3127,
+    "rho_jester": 0.3571,
+    "mae": 22.9774,
+    "epoch": 3.0
+  },
+  "m1_baseline": 0.277,
+  "gate": "beat 0.277 (PRD M2/M3 revised)",
+  "passed_gate": true,
+  "device_note": "Kaggle machine_shape=GPU_T4X2 accepted but torch.cuda.is_available()=False in worker \u2014 ran on CPU ~40min. Valid math either way; GPU rerun only affects speed, not results."
+}

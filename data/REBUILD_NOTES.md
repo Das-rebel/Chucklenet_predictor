@@ -33,3 +33,10 @@ No 101-bin accuracy. Every published number → result JSON in `evaluation_resul
 - Best: TF-IDF(1-2g) + Ridge α=10 → **Spearman 0.277** (Jester-gold subset: 0.813 @ n=13, weak evidence)
 - Gate: pre-evidence 0.35 target FAILED → revised per PRD §4: **M2 transformer must beat 0.277**
 - Result JSON: `evaluation_results/m1_tfidf_ridge_baseline.json`
+
+## M3 transformer result (2026-09-08, Kaggle kernel v3)
+- RoBERTa-base regression, 4 epochs: **Spearman 0.313** (best ep3) vs M1 0.277 → **gate PASS** (+0.036)
+- Jester-gold: 0.445@ep1 (n=13 held-out — weak evidence, fluctuates 0.27–0.45 across epochs)
+- MAE 22.98 | Ran on Kaggle CPU (~40 min; GPU mount didn't take — see JSON device_note)
+- Result JSON: `evaluation_results/results_v1_kaggle.json` · Kernel: kaggle.com/code/subhajitdas/chucklenet-predictor-v1-train
+- Next lever: longer max_len (256) + more epochs + T4 speedup; then calibration (M4)

@@ -2,7 +2,7 @@
 
 **Title:** Train humor prediction model
 
-**Status:** RESCOPED 2026-09-08 — blocked on task_006 data rebuild; use colab_train.py loop on REAL ratings (see docs/PRD.md §4-5)
+**Status:** DONE 2026-09-08 — M3 PASS: RoBERTa regression rho=0.313 > M1 0.277 (Kaggle kernel, results in evaluation_results/results_v1_kaggle.json; model pt in training_output/)
 
 **Dependencies:** 1
 

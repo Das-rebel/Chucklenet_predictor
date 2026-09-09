@@ -1,0 +1,23 @@
+{
+  "model": "roberta_v8",
+  "date": "2026-09-09",
+  "run": "v8: len256 ep16 batch64 GPU (P100 cu118), cosine LR 1e-5 \u2014 LR too low, cosine hurt",
+  "epochs": 16,
+  "lr": 1e-05,
+  "batch": 64,
+  "max_len": 256,
+  "device": "cuda",
+  "per_epoch": "see log \u2014 best ep1 rho=0.282, declined after",
+  "best": {
+    "rho": 0.282,
+    "mae": 23.54,
+    "epoch": 1
+  },
+  "m1_baseline": 0.277,
+  "gate": "beat 0.277",
+  "passed_gate": true,
+  "lessons": [
+    "cosine LR 1e-5 too conservative \u2014 model barely trained",
+    "v7 ep2 (2e-5 linear) remains best at rho=0.3226"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "model": "roberta_v7",
+  "date": "2026-09-09",
+  "run": "len256 ep8 batch64 GPU (P100 cu118 fix)",
+  "epochs": 8,
+  "lr": 2e-05,
+  "batch": 64,
+  "max_len": 256,
+  "device": "cuda",
+  "data": "kaggle:subhajitdas/chucklenet-predictor-v1-data",
+  "per_epoch": {
+    "1": {
+      "rho": 0.2844,
+      "mae": 23.5
+    },
+    "2": {
+      "rho": 0.3226,
+      "mae": 22.94,
+      "best": true
+    },
+    "3": {
+      "rho": 0.2962,
+      "mae": 23.23
+    },
+    "4": {
+      "rho": 0.2741,
+      "mae": 23.42
+    },
+    "5": {
+      "rho": 0.2692,
+      "mae": 24.12
+    },
+    "6": {
+      "rho": 0.2791,
+      "mae": 24.73
+    },
+    "7": {
+      "rho": 0.254,
+      "mae": 24.68
+    },
+    "8": {
+      "rho": 0.2659,
+      "mae": 25.17
+    }
+  },
+  "best": {
+    "rho": 0.3226,
+    "mae": 22.94,
+    "epoch": 2
+  },
+  "m1_baseline": 0.277,
+  "gate": "beat 0.277",
+  "passed_gate": true
+}

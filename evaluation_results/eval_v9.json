@@ -1,0 +1,59 @@
+{
+  "model": "deberta_v9",
+  "date": "2026-09-09",
+  "backbone": "microsoft/deberta-v3-small",
+  "params": "86M",
+  "run": "v9: DeBERTa-v3-small len256 ep8 batch48 LR2e-05 GPU P100, transformers 4.36",
+  "epochs": 8,
+  "lr": 2e-05,
+  "batch": 48,
+  "max_len": 256,
+  "device": "cuda",
+  "per_epoch": {
+    "1": {
+      "rho": 0.2742,
+      "mae": 23.44
+    },
+    "2": {
+      "rho": 0.2892,
+      "mae": 23.14,
+      "best": true
+    },
+    "3": {
+      "rho": 0.28,
+      "mae": 22.82
+    },
+    "4": {
+      "rho": 0.2652,
+      "mae": 23.26
+    },
+    "5": {
+      "rho": 0.2365,
+      "mae": 23.75
+    },
+    "6": {
+      "rho": 0.2318,
+      "mae": 24.1
+    },
+    "7": {
+      "rho": 0.2311,
+      "mae": 24.43
+    },
+    "8": {
+      "rho": 0.2234,
+      "mae": 24.49
+    }
+  },
+  "best": {
+    "rho": 0.2892,
+    "mae": 23.14,
+    "epoch": 2
+  },
+  "m1_baseline": 0.277,
+  "gate": "beat 0.277",
+  "passed_gate": true,
+  "lessons": [
+    "DeBERTa-v3-small (86M) WORSE than RoBERTa-base (125M) \u2014 smaller capacity hurt",
+    "RoBERTa-v6 (0.3233) and v7 (0.3226) remain best"
+  ]
+}
